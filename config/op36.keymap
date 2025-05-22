@@ -2,6 +2,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
 
 &mt {
     quick-tap-ms = <200>;
@@ -55,7 +56,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        base {
+        RU_abc {
             bindings = <
   &kp Q  &kp W  &kp E  &kp R      &kp T                          &kp Y  &kp U      &kp I      &kp O    &kp P
   &kp A  &kp S  &kp D  &kp F      &kp G                          &kp H  &kp J      &kp K      &kp L    &kp SEMI
@@ -64,12 +65,12 @@
             >;
         };
 
-        nav {
+        RU_mouse.updn {
             bindings = <
-  &kp N1         &kp N2    &kp N3     &kp N4     &kp N5                        &kp N6           &kp N7           &kp N8           &kp N9        &kp N0
-  &hml LGUI ESC  &kp LALT  &kp LSHFT  &kp LCTRL  &kp ENTER                     &kp PRINTSCREEN  &hmr RCTRL LEFT  &hmr RSHFT DOWN  &hmr LALT UP  &hmr RGUI RIGHT
-  &none          &kp HOME  &kp INS    &kp END    &kp DELETE                    &kp CAPS         &none            &kp PG_DN        &kp PG_UP     &none
-                                      &trans     &trans      &trans    &trans  &mo 3            &trans
+  &kp LSHFT  &kp DELETE  &kp ENTER        &kp TAB    &none                         &kp HOME  &kp PAGE_UP  &kp UP_ARROW  &kp PAGE_DOWN  &kp LBKT
+  &kp LCTRL  &none       &kp PAUSE_BREAK  &mkp LCLK  &none                         &kp END   &kp LEFT     &kp DOWN      &kp RIGHT      &kp RBKT
+  &kp RGUI   &none       &kp F10          &mkp RCLK  &none                         &none     &none        &none         &none          &kp APOS
+                                          &none      &none  &none    &kp LEFT_ALT  &none     &none
             >;
         };
 
@@ -88,6 +89,15 @@
   &kp LGUI     &hml LALT F5  &hml LSHFT F6  &hml LCTRL F7  &kp F8                     &out OUT_BLE  &hmr RCTRL C_VOL_DN  &hmr RSHFT C_MUTE  &hmr LALT C_VOL_UP  &kp RGUI
   &none        &kp F9        &kp F10        &kp F11        &kp F12                    &out OUT_USB  &kp C_PREV           &kp C_PP           &kp C_NEXT          &studio_unlock
                                             &trans         &trans   &trans    &trans  &trans        &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+  &kp N1         &kp N2    &kp N3     &kp N4     &kp N5                        &kp N6           &kp N7           &kp N8           &kp N9        &kp N0
+  &hml LGUI ESC  &kp LALT  &kp LSHFT  &kp LCTRL  &kp ENTER                     &kp PRINTSCREEN  &hmr RCTRL LEFT  &hmr RSHFT DOWN  &hmr LALT UP  &hmr RGUI RIGHT
+  &none          &kp HOME  &kp INS    &kp END    &kp DELETE                    &kp CAPS         &none            &kp PG_DN        &kp PG_UP     &none
+                                      &trans     &trans      &trans    &trans  &mo 3            &trans
             >;
         };
     };
