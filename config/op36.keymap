@@ -11,7 +11,13 @@
         ruen {
             bindings = <&ru_en>;
             key-positions = <31 34>;
-            layers = <0 4>;
+            layers = <0>;
+        };
+
+        enru {
+            bindings = <&en_ru>;
+            key-positions = <31 34>;
+            layers = <4>;
         };
     };
 
@@ -21,6 +27,13 @@
             #binding-cells = <0>;
             bindings = <&kp RS(LALT) &to 4>;
             label = "RU_EN";
+        };
+
+        en_ru: en_ru {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RS(LEFT_ALT) &to 0>;
+            label = "EN_RU";
         };
     };
 
