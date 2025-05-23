@@ -100,7 +100,7 @@
         xx: xx {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp A &kp B &kp C>;
+            bindings = <&kp RS(LEFT_ALT) &kp A &kp B &kp C &kp RS(LEFT_ALT)>;
             label = "XX";
         };
     };
