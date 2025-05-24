@@ -165,6 +165,13 @@
             bindings = <&kp LALT &kp Z &kp U &kp U &kp F>;
             label = "NO_GRID";
         };
+
+        en_frmt: en_frmt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RS(LALT) &kp LC(J) &kp RS(LALT)>;
+            label = "EN_FRMT";
+        };
     };
 
     behaviors {
@@ -264,10 +271,10 @@
 
         ru_sym {
             bindings = <
-  &formula  &none  &none  &kp LA(EQUAL)  &none                     &soft_off          &none            &none  &none  &bt BT_CLR
-  &none     &none  &none  &sell          &grid_no                  &none              &none            &none  &none  &bt BT_SEL 1
-  &none     &none  &none  &none          &combin                   &kp TILDE          &none            &none  &none  &bt BT_SEL 0
-                          &none          &none     &none    &none  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
+  &formula    &none  &none  &kp LA(EQUAL)  &kp LC(J)                  &soft_off          &none            &none  &none  &bt BT_CLR
+  &kp RS(N7)  &none  &none  &sell          &grid_no                   &none              &none            &none  &none  &bt BT_SEL 1
+  &none       &none  &none  &kp BACKSLASH  &combin                    &kp TILDE          &none            &none  &none  &bt BT_SEL 0
+                            &none          &none      &none    &none  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
             >;
         };
 
@@ -300,10 +307,10 @@
 
         en_sym {
             bindings = <
-  &formula  &none  &none  &kp LA(EQUAL)  &none                     &soft_off          &none            &none  &none  &bt BT_CLR
-  &none     &none  &none  &sell          &grid_no                  &none              &none            &none  &none  &bt BT_SEL 1
-  &none     &none  &none  &none          &combin                   &kp A              &none            &none  &none  &bt BT_SEL 0
-                          &none          &none     &none    &none  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
+  &formula          &kp LS(LEFT_BRACE)  &kp LS(RIGHT_BRACE)   &kp LA(EQUAL)  &en_frmt                  &soft_off          &none            &none  &none  &bt BT_CLR
+  &kp LS(QUESTION)  &kp LEFT_BRACKET    &kp RIGHT_BRACKET     &sell          &grid_no                  &none              &none            &none  &none  &bt BT_SEL 1
+  &none             &kp LS(LESS_THAN)   &kp LS(GREATER_THAN)  &kp BACKSLASH  &combin                   &kp A              &none            &none  &none  &bt BT_SEL 0
+                                                              &none          &none     &none    &none  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
             >;
         };
     };
