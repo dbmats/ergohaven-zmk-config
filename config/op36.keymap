@@ -172,6 +172,48 @@
             bindings = <&kp RS(LALT) &kp LC(J) &kp RS(LALT)>;
             label = "EN_FRMT";
         };
+
+        ru_min: min {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RS(LALT) &kp LS(LESS_THAN) &kp RS(LALT)>;
+            label = "MIN";
+        };
+
+        ru_max: ru_min {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RS(LALT) &kp LS(GREATER_THAN) &kp RS(LALT)>;
+            label = "RU_MIN";
+        };
+
+        ru_lftbrt: ru_lftbrt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RS(LALT) &kp LEFT_BRACKET &kp RS(LALT)>;
+            label = "RU_LFTBRT";
+        };
+
+        ru_rtbrt: ru_rtbrt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RS(LALT) &kp RIGHT_BRACKET &kp RS(LALT)>;
+            label = "RU_RTBRT";
+        };
+
+        ru_lftbbrt: ru_lftbbrt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RS(LALT) &kp LS(LEFT_BRACE) &kp RS(LALT)>;
+            label = "RU_LFTBBRT";
+        };
+
+        ru_rtbbrt: ru_rtbbrt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RS(LALT) &kp LS(RIGHT_BRACE) &kp RS(LALT)>;
+            label = "RU_RTBBRT";
+        };
     };
 
     behaviors {
@@ -271,10 +313,10 @@
 
         ru_sym {
             bindings = <
-  &formula    &none  &none  &kp LA(EQUAL)  &kp LC(J)                  &soft_off          &none            &none  &none  &bt BT_CLR
-  &kp RS(N7)  &none  &none  &sell          &grid_no                   &none              &none            &none  &none  &bt BT_SEL 1
-  &none       &none  &none  &kp BACKSLASH  &combin                    &kp TILDE          &none            &none  &none  &bt BT_SEL 0
-                            &none          &none      &none    &none  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
+  &formula    &ru_lftbbrt  &ru_rtbbrt  &kp LA(EQUAL)  &kp LC(J)                  &soft_off          &none            &none  &none  &bt BT_CLR
+  &kp RS(N7)  &ru_lftbrt   &ru_rtbrt   &sell          &grid_no                   &none              &none            &none  &none  &bt BT_SEL 1
+  &none       &ru_min      &ru_max     &kp BACKSLASH  &combin                    &kp TILDE          &none            &none  &none  &bt BT_SEL 0
+                                       &none          &none      &none    &none  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
             >;
         };
 
