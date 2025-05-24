@@ -136,6 +136,34 @@
             bindings = <&mkp LCLK &mkp LCLK>;
             label = "DBL_CLK";
         };
+
+        comb: join {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LALT &kp Z &kp O &kp COMMA>;
+            label = "JOIN";
+        };
+
+        dis_cmb: dis_cmb {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LALT &kp Z &kp O &kp J>;
+            label = "DIS_CMB";
+        };
+
+        grid: grid {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LALT &kp Z &kp U &kp U &kp C>;
+            label = "GRID";
+        };
+
+        no_grid: no_grid {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LALT &kp Z &kp U &kp U &kp F>;
+            label = "NO_GRID";
+        };
     };
 
     behaviors {
@@ -175,6 +203,24 @@
 
             tapping-term-ms = <300>;
         };
+
+        combin: combin {
+            compatible = "zmk,behavior-tap-dance";
+            label = "COMBIN";
+            #binding-cells = <0>;
+            bindings = <&comb>, <&dis_cmb>;
+
+            tapping-term-ms = <300>;
+        };
+
+        grid_no: grid_no {
+            compatible = "zmk,behavior-tap-dance";
+            label = "GRID_NO";
+            #binding-cells = <0>;
+            bindings = <&grid>, <&no_grid>;
+
+            tapping-term-ms = <300>;
+        };
     };
 
     keymap {
@@ -209,10 +255,10 @@
 
         ru_sym {
             bindings = <
-  &formula  &none  &none  &none  &none                  &soft_off          &none            &none  &none  &bt BT_CLR
-  &none     &none  &none  &none  &none                  &none              &none            &none  &none  &bt BT_SEL 1
-  &none     &none  &none  &none  &none                  &kp TILDE          &none            &none  &none  &bt BT_SEL 0
-                          &none  &none  &none    &none  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
+  &formula  &none  &none  &kp LA(EQUAL)  &none                     &soft_off          &none            &none  &none  &bt BT_CLR
+  &none     &none  &none  &none          &grid_no                  &none              &none            &none  &none  &bt BT_SEL 1
+  &none     &none  &none  &none          &combin                   &kp TILDE          &none            &none  &none  &bt BT_SEL 0
+                          &none          &none     &none    &none  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
             >;
         };
 
@@ -245,10 +291,10 @@
 
         en_sym {
             bindings = <
-  &formula  &none  &none  &none  &none                  &soft_off          &none            &none  &none  &bt BT_CLR
-  &none     &none  &none  &none  &none                  &none              &none            &none  &none  &bt BT_SEL 1
-  &none     &none  &none  &none  &none                  &kp A              &none            &none  &none  &bt BT_SEL 0
-                          &none  &none  &none    &none  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
+  &formula  &none  &none  &kp LA(EQUAL)  &none                     &soft_off          &none            &none  &none  &bt BT_CLR
+  &none     &none  &none  &none          &grid_no                  &none              &none            &none  &none  &bt BT_SEL 1
+  &none     &none  &none  &none          &combin                   &kp A              &none            &none  &none  &bt BT_SEL 0
+                          &none          &none     &none    &none  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
             >;
         };
     };
