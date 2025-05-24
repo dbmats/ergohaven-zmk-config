@@ -91,13 +91,6 @@
             label = "XX";
         };
 
-        ru2: ru2 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RS(LEFT_ALT) &kp LS(N2) &kp RS(LEFT_ALT)>;
-            label = "RU2";
-        };
-
         ru3: ru3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -115,15 +108,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "hold-preferred";
-        };
-
-        ru_2: ru_2 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "RU_2";
-            bindings = <&ru2>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
         };
 
         ru_3: ru_3 {
@@ -159,10 +143,10 @@
 
         ru_num {
             bindings = <
-  &kp N0               &mt LS(N9) N9    &mt LS(N9) N8  &ru_7 A N7     &mt RS(N6) N6                     &kp F6       &kp F7              &kp F8              &kp F9      &kp F11
-  &mt RS(N1) N1        &ru_2 0 N2       &kp N3         &mt RS(N4) N4  &mt RS(N5) N5                     &kp F5       &kp F4              &kp F3              &kp F2      &kp F12
-  &mt LS(EQUAL) EQUAL  &mt MINUS MINUS  &kp STAR       &kp RS(PIPE)   &kp LS(FSLH)                      &kp LA(F12)  &kp LA(LS(INSERT))  &kp LC(LS(INSERT))  &kp LS(F6)  &kp LS(F5)
-                                                       &none          &kp LCTRL      &kp LALT    &none  &none        &kp RIGHT_CONTROL
+  &kp N0               &mt LS(N9) N9        &mt LS(N9) N8  &ru_7 A N7     &mt RS(N6) N6                     &kp F6       &kp F7              &kp F8              &kp F9      &kp F11
+  &mt RS(N1) N1        &mt RS(N2) N2        &ru_3 0 N3     &mt RS(N4) N4  &mt RS(N5) N5                     &kp F5       &kp F4              &kp F3              &kp F2      &kp F12
+  &mt LS(EQUAL) EQUAL  &mt LS(MINUS) MINUS  &kp STAR       &kp RS(PIPE)   &kp LS(FSLH)                      &kp LA(F12)  &kp LA(LS(INSERT))  &kp LC(LS(INSERT))  &kp LS(F6)  &kp LS(F5)
+                                                           &none          &kp LCTRL      &kp LALT    &none  &none        &kp RIGHT_CONTROL
             >;
         };
 
