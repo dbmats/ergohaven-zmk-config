@@ -103,6 +103,34 @@
             bindings = <&kp RS(LEFT_ALT) &kp RS(N6) &kp RS(LEFT_ALT)>;
             label = "RU6";
         };
+
+        format: format {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LALT &kp Z &kp V &kp A &kp A &kp A &kp ENTER>;
+            label = "FORMAT";
+        };
+
+        value: value {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LALT &kp Z &kp V &kp P &kp P &kp ENTER>;
+            label = "VALUE";
+        };
+
+        formula: formula {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LALT &kp Z &kp V &kp A &kp A &kp ENTER>;
+            label = "FORMULA";
+        };
+
+        in_val: in_val {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(C) &value>;
+            label = "IN_VAL";
+        };
     };
 
     behaviors {
@@ -167,10 +195,10 @@
 
         ru_sym {
             bindings = <
-  &bootloader  &none  &none  &none  &none                  &soft_off          &none            &none  &none  &bt BT_CLR
-  &none        &none  &none  &none  &none                  &none              &none            &none  &none  &bt BT_SEL 1
-  &none        &none  &none  &none  &none                  &kp TILDE          &none            &none  &none  &bt BT_SEL 0
-                             &none  &none  &none    &none  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
+  &value  &formula  &format  &in_val  &none                  &soft_off          &none            &none  &none  &bt BT_CLR
+  &none   &none     &none    &none    &none                  &none              &none            &none  &none  &bt BT_SEL 1
+  &none   &none     &none    &none    &none                  &kp TILDE          &none            &none  &none  &bt BT_SEL 0
+                             &none    &none  &none    &none  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
             >;
         };
 
