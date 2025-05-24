@@ -133,7 +133,7 @@
         in_val: in_val {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(C) &value &kp RS(ESC)>;
+            bindings = <&kp LC(C) &value &kp ESC>;
             label = "IN_VAL";
         };
 
