@@ -179,6 +179,8 @@
             label = "FRL_INV";
             #binding-cells = <0>;
             bindings = <&formula>, <&in_val>;
+
+            tapping-term-ms = <300>;
         };
 
         val_frm: val_frm {
@@ -186,6 +188,8 @@
             label = "VAL_FRM";
             #binding-cells = <0>;
             bindings = <&value>, <&format>;
+
+            tapping-term-ms = <300>;
         };
     };
 
@@ -221,10 +225,10 @@
 
         ru_sym {
             bindings = <
-  &frl_inv  &none  &none  &none  &none                  &soft_off          &none            &none  &none  &bt BT_CLR
-  &none     &none  &none  &none  &none                  &none              &none            &none  &none  &bt BT_SEL 1
-  &none     &none  &none  &none  &none                  &kp TILDE          &none            &none  &none  &bt BT_SEL 0
-                          &none  &none  &none    &none  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
+  &frl_inv  &value  &formula  &format  &in_val                  &soft_off          &none            &none  &none  &bt BT_CLR
+  &none     &none   &none     &none    &none                    &none              &none            &none  &none  &bt BT_SEL 1
+  &none     &none   &none     &none    &none                    &kp TILDE          &none            &none  &none  &bt BT_SEL 0
+                              &none    &none    &none    &none  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
             >;
         };
 
