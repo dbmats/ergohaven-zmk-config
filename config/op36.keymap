@@ -78,6 +78,12 @@
             key-positions = <28 19>;
             layers = <0 4>;
         };
+
+        to_cs {
+            bindings = <&tog 8>;
+            key-positions = <5 6>;
+            layers = <0 4 8>;
+        };
     };
 
     macros {
@@ -408,6 +414,15 @@
   &kp LS(QUESTION)  &kp LEFT_BRACKET    &kp RIGHT_BRACKET     &sell          &grid_no                  &none              &kp LS(DOLLAR)   &kp LS(AT_SIGN)  &kp TILDE  &bt BT_SEL 1
   &none             &kp LS(LESS_THAN)   &kp LS(GREATER_THAN)  &kp BACKSLASH  &combin                   &kp A              &none            &none            &kp PIPE   &bt BT_SEL 0
                                                               &none          &none     &none    &none  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
+            >;
+        };
+
+        contr_strike {
+            bindings = <
+  &kp N3   &kp Z     &kp UP_ARROW  &kp HOME   &kp T                       &trans  &trans  &trans  &trans  &trans
+  &kp END  &kp LEFT  &kp DOWN      &kp RIGHT  &kp F                       &trans  &trans  &trans  &trans  &trans
+  &kp N2   &trans    &trans        &trans     &trans                      &trans  &trans  &trans  &trans  &trans
+                                   &kp SPACE  &kp LALT  &kp N1    &trans  &trans  &trans
             >;
         };
     };
