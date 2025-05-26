@@ -391,6 +391,8 @@
             label = "RU_KG";
             #binding-cells = <0>;
             bindings = <&kp LC(W)>, <&kp LS(LC(W))>;
+
+            tapping-term-ms = <300>;
         };
 
         en_kg: en_kg {
@@ -398,6 +400,8 @@
             label = "EN_KG";
             #binding-cells = <0>;
             bindings = <&en_kg1>, <&en_kg2>;
+
+            tapping-term-ms = <300>;
         };
     };
 
