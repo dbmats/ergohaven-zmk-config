@@ -90,6 +90,24 @@
             key-positions = <22 23>;
             layers = <8>;
         };
+
+        esc_right {
+            bindings = <&kp RCTRL>;
+            key-positions = <16 18>;
+            layers = <0 4>;
+        };
+
+        capsl {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <30 35>;
+            layers = <0 4>;
+        };
+
+        win_right {
+            bindings = <&kp LWIN>;
+            key-positions = <25 26>;
+            layers = <0 4>;
+        };
     };
 
     macros {
@@ -281,6 +299,27 @@
             bindings = <&kp RS(LALT) &kp PIPE &kp RS(LALT)>;
             label = "PIP";
         };
+
+        en_numbf: en_numbf {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RS(LALT) &kp LC(Q) &kp RS(LALT)>;
+            label = "EN_NUMBF";
+        };
+
+        en_kg1: en_kg1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RS(LALT) &kp LC(W) &kp RS(LALT)>;
+            label = "EN_KG1";
+        };
+
+        en_kg2: en_kg2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RS(LALT) &kp LS(LC(W)) &kp RS(LALT)>;
+            label = "EN_KG2";
+        };
     };
 
     behaviors {
@@ -346,6 +385,20 @@
             tapping-term-ms = <300>;
             bindings = <&kp LC(PLUS)>, <&kp LC(MINUS)>;
         };
+
+        ru_kg: ru_kg {
+            compatible = "zmk,behavior-tap-dance";
+            label = "RU_KG";
+            #binding-cells = <0>;
+            bindings = <&kp LC(W)>, <&kp LS(LC(W))>;
+        };
+
+        en_kg: en_kg {
+            compatible = "zmk,behavior-tap-dance";
+            label = "EN_KG";
+            #binding-cells = <0>;
+            bindings = <&en_kg1>, <&en_kg2>;
+        };
     };
 
     keymap {
@@ -364,7 +417,7 @@
             bindings = <
   &kp LSHFT  &kp DELETE  &kp ENTER        &kp TAB    &kp LA(LC(N1))                         &kp HOME              &kp PAGE_UP  &kp UP_ARROW  &kp PAGE_DOWN  &kp LBKT
   &kp LCTRL  &none       &kp PAUSE_BREAK  &mkp LCLK  &dbl_clk                               &kp END               &kp LEFT     &kp DOWN      &kp RIGHT      &kp RBKT
-  &kp RGUI   &none       &kp F10          &mkp RCLK  &none                                  &kp RIGHT_WIN         &none        &none         &none          &kp APOS
+  &kp LWIN   &kp LALT    &kp F10          &mkp RCLK  &none                                  &kp LWIN              &none        &none         &none          &kp APOS
                                           &none      &none           &none    &kp LEFT_ALT  &kp LS(LEFT_CONTROL)  &kp INSERT
             >;
         };
@@ -382,8 +435,8 @@
             bindings = <
   &formula    &ru_lftbbrt  &ru_rtbbrt  &kp LA(EQUAL)  &kp LC(J)                  &soft_off          &ru_caret        &ru_apostr  &grave    &bt BT_CLR
   &kp RS(N7)  &ru_lftbrt   &ru_rtbrt   &sell          &grid_no                   &none              &ru_doll         &ru_atsign  &ru_tild  &bt BT_SEL 1
-  &none       &ru_min      &ru_max     &kp BACKSLASH  &combin                    &kp TILDE          &none            &none       &ru_pipe  &bt BT_SEL 0
-                                       &none          &none      &none    &none  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
+  &ru_kg      &ru_min      &ru_max     &kp BACKSLASH  &combin                    &kp TILDE          &none            &none       &ru_pipe  &bt BT_SEL 0
+                                       &none          &kp LC(Q)  &none    &none  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
             >;
         };
 
@@ -400,7 +453,7 @@
             bindings = <
   &kp LSHFT  &kp DELETE  &kp ENTER        &kp TAB    &kp LA(LC(N1))                         &kp HOME              &kp PAGE_UP  &kp UP_ARROW  &kp PAGE_DOWN  &kp LBKT
   &kp LCTRL  &none       &kp PAUSE_BREAK  &mkp LCLK  &dbl_clk                               &kp END               &kp LEFT     &kp DOWN      &kp RIGHT      &kp RBKT
-  &kp RGUI   &none       &kp F10          &mkp RCLK  &none                                  &kp RIGHT_WIN         &none        &none         &none          &kp APOS
+  &kp LWIN   &kp LALT    &kp F10          &mkp RCLK  &none                                  &kp LWIN              &none        &none         &none          &kp APOS
                                           &none      &none           &none    &kp LEFT_ALT  &kp LS(LEFT_CONTROL)  &kp INSERT
             >;
         };
@@ -416,10 +469,10 @@
 
         en_sym {
             bindings = <
-  &formula          &kp LS(LEFT_BRACE)  &kp LS(RIGHT_BRACE)   &kp LA(EQUAL)  &en_frmt                  &soft_off          &kp CARET        &kp SQT          &kp GRAVE  &bt BT_CLR
-  &kp LS(QUESTION)  &kp LEFT_BRACKET    &kp RIGHT_BRACKET     &sell          &grid_no                  &none              &kp LS(DOLLAR)   &kp LS(AT_SIGN)  &kp TILDE  &bt BT_SEL 1
-  &none             &kp LS(LESS_THAN)   &kp LS(GREATER_THAN)  &kp BACKSLASH  &combin                   &kp A              &none            &none            &kp PIPE   &bt BT_SEL 0
-                                                              &none          &none     &none    &none  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
+  &formula          &kp LS(LEFT_BRACE)  &kp LS(RIGHT_BRACE)   &kp LA(EQUAL)  &en_frmt                   &soft_off          &kp CARET        &kp SQT          &kp GRAVE  &bt BT_CLR
+  &kp LS(QUESTION)  &kp LEFT_BRACKET    &kp RIGHT_BRACKET     &sell          &grid_no                   &none              &kp LS(DOLLAR)   &kp LS(AT_SIGN)  &kp TILDE  &bt BT_SEL 1
+  &en_kg            &kp LS(LESS_THAN)   &kp LS(GREATER_THAN)  &kp BACKSLASH  &combin                    &kp A              &none            &none            &kp PIPE   &bt BT_SEL 0
+                                                              &none          &en_numbf  &none    &none  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
             >;
         };
 
