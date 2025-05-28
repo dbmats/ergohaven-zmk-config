@@ -320,6 +320,13 @@
             bindings = <&kp RS(LALT) &kp LS(LC(W)) &kp RS(LALT)>;
             label = "EN_KG2";
         };
+
+        en_nomer: en_nomer {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RS(LALT) &kp RS(NUMBER_3) &kp RS(LALT)>;
+            label = "EN_NOMER";
+        };
     };
 
     behaviors {
@@ -437,9 +444,9 @@
 
         ru_sym {
             bindings = <
-  &formula    &ru_lftbbrt  &ru_rtbbrt  &kp LA(EQUAL)  &kp LC(J)                  &soft_off          &ru_caret        &ru_apostr  &grave    &bt BT_CLR
-  &kp RS(N7)  &ru_lftbrt   &ru_rtbrt   &sell          &grid_no                   &none              &ru_doll         &ru_atsign  &ru_tild  &bt BT_SEL 1
-  &ru_kg      &ru_min      &ru_max     &kp BACKSLASH  &combin                    &kp TILDE          &none            &none       &ru_pipe  &bt BT_SEL 0
+  &formula    &ru_lftbbrt  &ru_rtbbrt  &kp LA(EQUAL)  &kp LC(J)                  &soft_off          &ru_caret        &ru_apostr        &grave    &bt BT_CLR
+  &kp RS(N7)  &ru_lftbrt   &ru_rtbrt   &sell          &grid_no                   &none              &ru_doll         &ru_atsign        &ru_tild  &bt BT_SEL 1
+  &ru_kg      &ru_min      &ru_max     &kp BACKSLASH  &combin                    &kp TILDE          &none            &kp RS(NUMBER_3)  &ru_pipe  &bt BT_SEL 0
                                        &none          &kp LC(Q)  &none    &none  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
             >;
         };
@@ -475,7 +482,7 @@
             bindings = <
   &formula          &kp LS(LEFT_BRACE)  &kp LS(RIGHT_BRACE)   &kp LA(EQUAL)  &en_frmt                   &soft_off          &kp CARET        &kp SQT          &kp GRAVE  &bt BT_CLR
   &kp LS(QUESTION)  &kp LEFT_BRACKET    &kp RIGHT_BRACKET     &sell          &grid_no                   &none              &kp LS(DOLLAR)   &kp LS(AT_SIGN)  &kp TILDE  &bt BT_SEL 1
-  &en_kg            &kp LS(LESS_THAN)   &kp LS(GREATER_THAN)  &kp BACKSLASH  &combin                    &kp A              &none            &none            &kp PIPE   &bt BT_SEL 0
+  &en_kg            &kp LS(LESS_THAN)   &kp LS(GREATER_THAN)  &kp BACKSLASH  &combin                    &kp A              &none            &en_nomer        &kp PIPE   &bt BT_SEL 0
                                                               &none          &en_numbf  &none    &none  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
             >;
         };
