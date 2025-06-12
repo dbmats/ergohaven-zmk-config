@@ -471,10 +471,10 @@
 
         en_num {
             bindings = <
-  &kp N0          &mt RS(N9) N9             &mt RS(N0) N8  &mt RS(N7) N7             &en_6 0 N6                        &kp F6       &kp F7              &kp F8              &kp F9      &kp F11
-  &mt RS(N1) N1   &mt RS(DOUBLE_QUOTES) N2  &mt HASH N3    &mt SEMICOLON N4          &mt RS(N5) N5                     &kp F5       &kp F4              &kp F3              &kp F2      &kp F12
-  &mt PLUS EQUAL  &mt UNDERSCORE MINUS      &kp STAR       &kp RS(NON_US_BACKSLASH)  &kp COMMA                         &kp LA(F12)  &kp LA(LS(INSERT))  &kp LC(LS(INSERT))  &kp LS(F6)  &kp LS(F5)
-                                                           &none                     &kp LCTRL      &kp LALT    &none  &none        &kp RIGHT_CONTROL
+  &kp N0          &mt RS(N9) N9             &mt RS(N0) N8  &mt RS(N7) N7     &en_6 0 N6                        &kp F6       &kp F7              &kp F8              &kp F9      &kp F11
+  &mt RS(N1) N1   &mt RS(DOUBLE_QUOTES) N2  &mt HASH N3    &mt SEMICOLON N4  &mt RS(N5) N5                     &kp F5       &kp F4              &kp F3              &kp F2      &kp F12
+  &mt PLUS EQUAL  &mt UNDERSCORE MINUS      &kp STAR       &kp SLASH         &kp COMMA                         &kp LA(F12)  &kp LA(LS(INSERT))  &kp LC(LS(INSERT))  &kp LS(F6)  &kp LS(F5)
+                                                           &none             &kp LCTRL      &kp LALT    &none  &none        &kp RIGHT_CONTROL
             >;
         };
 
