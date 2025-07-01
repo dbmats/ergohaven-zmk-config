@@ -85,12 +85,6 @@
             layers = <0 4 8>;
         };
 
-        cs_flash {
-            bindings = <&kp V>;
-            key-positions = <22 23>;
-            layers = <8>;
-        };
-
         esc_right {
             bindings = <&kp RCTRL>;
             key-positions = <16 18>;
@@ -489,9 +483,9 @@
 
         contr_strike {
             bindings = <
-  &kp N3   &kp Z     &kp UP_ARROW  &kp HOME   &kp T                        &kp DEL  &trans  &trans  &kp F1  &kp ESC
-  &kp END  &kp LEFT  &kp DOWN      &kp RIGHT  &kp F                        &trans   &trans  &trans  &kp F2  &kp F4
-  &kp N2   &kp X     &kp B         &kp C      &kp L                        &trans   &trans  &trans  &kp O   &kp F8
+  &kp N3   &kp Z     &kp UP_ARROW  &kp HOME   &kp T                        &kp DEL  &trans  &kp F1  &kp ESC  &kp V
+  &kp END  &kp LEFT  &kp DOWN      &kp RIGHT  &kp F                        &trans   &trans  &kp F2  &kp F4   &none
+  &kp N2   &kp X     &kp B         &kp C      &kp L                        &trans   &trans  &kp O   &kp F8   &none
                                    &kp SPACE  &kp LALT  &kp N1    &kp F12  &trans   &trans
             >;
         };
