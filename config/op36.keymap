@@ -483,9 +483,9 @@
 
         contr_strike {
             bindings = <
-  &kp N3   &kp Z     &kp UP_ARROW  &kp HOME   &kp T                        &none          &trans      &kp F1  &kp ESC  &kp V
+  &kp N3   &kp Z     &kp UP_ARROW  &kp HOME   &kp T                        &none          &trans      &kp F1  &kp ESC  &kp NUMBER_4
   &kp END  &kp LEFT  &kp DOWN      &kp RIGHT  &kp F                        &kp BACKSLASH  &trans      &kp F2  &kp F4   &none
-  &kp N2   &kp X     &kp B         &kp C      &none                        &trans         &trans      &kp O   &kp F8   &kp L
+  &kp N2   &kp X     &kp B         &kp C      &kp V                        &trans         &trans      &kp O   &kp F8   &kp L
                                    &kp SPACE  &kp LALT  &kp N1    &kp F12  &trans         &kp INSERT
             >;
         };
