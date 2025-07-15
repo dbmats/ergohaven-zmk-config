@@ -321,6 +321,13 @@
             bindings = <&kp RS(LALT) &kp RS(NUMBER_3) &kp RS(LALT)>;
             label = "EN_NOMER";
         };
+
+        parol: parol {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &kp EXCLAMATION &kp AT_SIGN &en_nomer &kp LS(A) &kp LS(S) &kp LS(D) &kp A &kp S &kp D>;
+            label = "PAROL";
+        };
     };
 
     behaviors {
@@ -475,7 +482,7 @@
         en_sym {
             bindings = <
   &formula          &kp LS(LEFT_BRACE)  &kp LS(RIGHT_BRACE)   &kp LA(EQUAL)  &en_frmt                   &soft_off          &kp CARET        &kp SQT          &kp GRAVE  &bt BT_CLR
-  &kp LS(QUESTION)  &kp LEFT_BRACKET    &kp RIGHT_BRACKET     &sell          &grid_no                   &none              &kp LS(DOLLAR)   &kp LS(AT_SIGN)  &kp TILDE  &bt BT_SEL 1
+  &kp LS(QUESTION)  &kp LEFT_BRACKET    &kp RIGHT_BRACKET     &sell          &grid_no                   &parol             &kp LS(DOLLAR)   &kp LS(AT_SIGN)  &kp TILDE  &bt BT_SEL 1
   &en_kg            &kp LS(LESS_THAN)   &kp LS(GREATER_THAN)  &kp BACKSLASH  &combin                    &kp A              &none            &en_nomer        &kp PIPE   &bt BT_SEL 0
                                                               &none          &en_numbf  &none    &none  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
             >;
