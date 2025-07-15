@@ -327,9 +327,9 @@
             #binding-cells = <0>;
             bindings =
                 <&kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &kp EXCLAMATION &kp AT_SIGN>,
-                <&macro_wait_time 20>,
+                <&macro_wait_time 50>,
                 <&en_nomer>,
-                <&macro_wait_time 20>,
+                <&macro_wait_time 50>,
                 <&kp LS(A) &kp LS(S) &kp LS(D) &kp A &kp S &kp D>;
 
             label = "PAROL";
