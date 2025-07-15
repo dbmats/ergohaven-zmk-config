@@ -325,7 +325,11 @@
         parol: parol {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &kp EXCLAMATION &kp AT_SIGN &en_nomer &kp LS(A) &kp LS(S) &kp LS(D) &kp A &kp S &kp D>;
+            bindings =
+                <&kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &kp EXCLAMATION &kp AT_SIGN &en_nomer>,
+                <&macro_wait_time 20>,
+                <&kp LS(A) &kp LS(S) &kp LS(D) &kp A &kp S &kp D>;
+
             label = "PAROL";
         };
     };
