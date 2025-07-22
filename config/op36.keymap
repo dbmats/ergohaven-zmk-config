@@ -429,7 +429,7 @@
             bindings = <
   &kp LSHFT  &kp DELETE  &kp ENTER        &kp TAB    &kp LA(LC(N1))                         &kp HOME              &kp PAGE_UP  &kp UP_ARROW  &kp PAGE_DOWN  &kp LBKT
   &kp LCTRL  &kp LALT    &kp PAUSE_BREAK  &mkp LCLK  &dbl_clk                               &kp END               &kp LEFT     &kp DOWN      &kp RIGHT      &kp RBKT
-  &kp LWIN   &none       &kp F10          &mkp RCLK  &none                                  &kp LWIN              &none        &none         &kp TILDE      &kp APOS
+  &kp LWIN   &none       &kp F10          &mkp RCLK  &none                                  &kp LWIN              &none        &none         &none          &kp APOS
                                           &none      &none           &none    &kp LEFT_ALT  &kp LS(LEFT_CONTROL)  &kp INSERT
             >;
         };
@@ -445,10 +445,10 @@
 
         ru_sym {
             bindings = <
-  &formula    &ru_lftbbrt  &ru_rtbbrt  &kp LA(EQUAL)  &kp LC(J)                  &soft_off          &ru_caret        &ru_apostr        &grave    &bt BT_CLR
-  &kp RS(N7)  &ru_lftbrt   &ru_rtbrt   &sell          &grid_no                   &none              &ru_doll         &ru_atsign        &ru_tild  &bt BT_SEL 1
-  &ru_kg      &ru_min      &ru_max     &kp BACKSLASH  &combin                    &kp TILDE          &none            &kp RS(NUMBER_3)  &ru_pipe  &bt BT_SEL 0
-                                       &none          &kp LC(Q)  &none    &none  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
+  &formula    &ru_lftbbrt  &ru_rtbbrt  &kp LA(EQUAL)  &kp LC(J)                      &soft_off          &ru_caret        &ru_apostr        &grave    &bt BT_CLR
+  &kp RS(N7)  &ru_lftbrt   &ru_rtbrt   &sell          &grid_no                       &none              &ru_doll         &ru_atsign        &ru_tild  &bt BT_SEL 1
+  &ru_kg      &ru_min      &ru_max     &kp BACKSLASH  &combin                        &kp TILDE          &none            &kp RS(NUMBER_3)  &ru_pipe  &bt BT_SEL 0
+                                       &none          &kp LC(Q)  &kp LCTRL    &none  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
             >;
         };
 
@@ -481,10 +481,10 @@
 
         en_sym {
             bindings = <
-  &formula          &kp LS(LEFT_BRACE)  &kp LS(RIGHT_BRACE)   &kp LA(EQUAL)  &en_frmt                   &soft_off          &kp CARET        &kp SQT          &kp GRAVE  &bt BT_CLR
-  &kp LS(QUESTION)  &kp LEFT_BRACKET    &kp RIGHT_BRACKET     &sell          &grid_no                   &parol             &kp LS(DOLLAR)   &kp LS(AT_SIGN)  &kp TILDE  &bt BT_SEL 1
-  &en_kg            &kp LS(LESS_THAN)   &kp LS(GREATER_THAN)  &kp BACKSLASH  &combin                    &kp A              &none            &en_nomer        &kp PIPE   &bt BT_SEL 0
-                                                              &none          &en_numbf  &none    &none  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
+  &formula          &kp LS(LEFT_BRACE)  &kp LS(RIGHT_BRACE)   &kp LA(EQUAL)  &en_frmt                       &soft_off          &kp CARET        &kp SQT          &kp GRAVE  &bt BT_CLR
+  &kp LS(QUESTION)  &kp LEFT_BRACKET    &kp RIGHT_BRACKET     &sell          &grid_no                       &parol             &kp LS(DOLLAR)   &kp LS(AT_SIGN)  &kp TILDE  &bt BT_SEL 1
+  &en_kg            &kp LS(LESS_THAN)   &kp LS(GREATER_THAN)  &kp BACKSLASH  &combin                        &kp A              &none            &en_nomer        &kp PIPE   &bt BT_SEL 0
+                                                              &none          &en_numbf  &kp LCTRL    &none  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
             >;
         };
 
