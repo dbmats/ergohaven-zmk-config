@@ -429,7 +429,7 @@
             bindings = <
   &kp LSHFT  &kp DELETE  &kp ENTER        &kp TAB    &kp LA(LC(N1))                         &kp HOME              &kp PAGE_UP  &kp UP_ARROW  &kp PAGE_DOWN  &kp LBKT
   &kp LCTRL  &kp LALT    &kp PAUSE_BREAK  &mkp LCLK  &dbl_clk                               &kp END               &kp LEFT     &kp DOWN      &kp RIGHT      &kp RBKT
-  &kp LWIN   &none       &kp F10          &mkp RCLK  &none                                  &kp LWIN              &none        &none         &none          &kp APOS
+  &kp LWIN   &none       &kp F10          &mkp RCLK  &none                                  &kp LWIN              &none        &none         &kp TILDE      &kp APOS
                                           &none      &none           &none    &kp LEFT_ALT  &kp LS(LEFT_CONTROL)  &kp INSERT
             >;
         };
