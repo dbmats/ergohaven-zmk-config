@@ -492,7 +492,7 @@
             bindings = <
   &kp N3   &kp Z     &kp UP_ARROW  &kp HOME   &kp T                        &kp C_VOLUME_UP    &trans      &kp F1  &kp ESC  &kp P
   &kp END  &kp LEFT  &kp DOWN      &kp RIGHT  &kp F                        &kp C_VOLUME_DOWN  &trans      &kp F2  &kp F4   &none
-  &kp N2   &kp X     &kp B         &kp C      &kp V                        &kp BSLH           &trans      &kp O   &kp F8   &mkp LCLK
+  &kp N2   &kp X     &kp B         &kp C      &kp V                        &kp BSLH           &trans      &kp O   &kp F8   &none
                                    &kp L      &kp LALT  &kp N1    &kp F12  &trans             &kp INSERT
             >;
         };
