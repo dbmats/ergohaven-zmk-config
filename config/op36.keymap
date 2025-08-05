@@ -1,6 +1,5 @@
 #include "keys_ru.h"
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
@@ -453,8 +452,8 @@
 
         ru_sym {
             bindings = <
-  &formula    &ru_lftbbrt  &ru_rtbbrt  &kp LA(EQUAL)  &kp LC(J)                      &bt BT_CLR         &ru_caret        &ru_apostr        &grave    &out OUT_TOG
-  &kp RS(N7)  &ru_lftbrt   &ru_rtbrt   &sell          &grid_no                       &bt BT_SEL 0       &ru_doll         &ru_atsign        &ru_tild  &none
+  &formula    &ru_lftbbrt  &ru_rtbbrt  &kp LA(EQUAL)  &kp LC(J)                      &none              &ru_caret        &ru_apostr        &grave    &out OUT_TOG
+  &kp RS(N7)  &ru_lftbrt   &ru_rtbrt   &sell          &grid_no                       &none              &ru_doll         &ru_atsign        &ru_tild  &none
   &ru_kg      &ru_min      &ru_max     &kp BACKSLASH  &combin                        &kp TILDE          &none            &kp RS(NUMBER_3)  &ru_pipe  &none
                                        &none          &kp LC(Q)  &kp LCTRL    &none  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
             >;
@@ -489,7 +488,7 @@
 
         en_sym {
             bindings = <
-  &formula          &kp LS(LEFT_BRACE)  &kp LS(RIGHT_BRACE)   &kp LA(EQUAL)  &en_frmt                       &none              &kp CARET        &kp SQT          &kp GRAVE  &none
+  &formula          &kp LS(LEFT_BRACE)  &kp LS(RIGHT_BRACE)   &kp LA(EQUAL)  &en_frmt                       &none              &kp CARET        &kp SQT          &kp GRAVE  &out OUT_TOG
   &kp LS(QUESTION)  &kp LEFT_BRACKET    &kp RIGHT_BRACKET     &sell          &grid_no                       &parol             &kp LS(DOLLAR)   &kp LS(AT_SIGN)  &kp TILDE  &none
   &en_kg            &kp LS(LESS_THAN)   &kp LS(GREATER_THAN)  &kp BACKSLASH  &combin                        &kp A              &none            &en_nomer        &kp PIPE   &none
                                                               &none          &en_numbf  &kp LCTRL    &none  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
