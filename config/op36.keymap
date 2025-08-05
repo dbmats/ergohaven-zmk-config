@@ -329,6 +329,13 @@
             bindings = <&kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &kp EXCLAMATION &kp AT_SIGN &kp HASH &kp LS(A) &kp LS(S) &kp LS(D) &kp A &kp S &kp D>;
             label = "PAROL";
         };
+
+        parol_ru: parol_ru {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RS(LALT) &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &kp EXCLAMATION &kp AT_SIGN &kp HASH &kp LS(A) &kp LS(S) &kp LS(D) &kp A &kp S &kp D &kp RS(LEFT_ALT)>;
+            label = "PAROL_RU";
+        };
     };
 
     behaviors {
@@ -453,7 +460,7 @@
         ru_sym {
             bindings = <
   &formula    &ru_lftbbrt  &ru_rtbbrt  &kp LA(EQUAL)  &kp LC(J)                      &none              &ru_caret        &ru_apostr        &grave    &out OUT_TOG
-  &kp RS(N7)  &ru_lftbrt   &ru_rtbrt   &sell          &grid_no                       &none              &ru_doll         &ru_atsign        &ru_tild  &none
+  &kp RS(N7)  &ru_lftbrt   &ru_rtbrt   &sell          &grid_no                       &parol_ru          &ru_doll         &ru_atsign        &ru_tild  &none
   &ru_kg      &ru_min      &ru_max     &kp BACKSLASH  &combin                        &kp TILDE          &none            &kp RS(NUMBER_3)  &ru_pipe  &none
                                        &none          &kp LC(Q)  &kp LCTRL    &none  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
             >;
