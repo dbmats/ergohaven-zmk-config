@@ -459,8 +459,8 @@
 
         ru_sym {
             bindings = <
-  &formula    &ru_lftbbrt  &ru_rtbbrt  &kp LA(EQUAL)  &kp LC(J)                      &out OUT_TOG       &ru_caret        &ru_apostr        &grave    &none
-  &kp RS(N7)  &ru_lftbrt   &ru_rtbrt   &sell          &grid_no                       &parol_ru          &ru_doll         &ru_atsign        &ru_tild  &none
+  &formula    &ru_lftbbrt  &ru_rtbbrt  &kp LA(EQUAL)  &kp LC(J)                      &out OUT_TOG       &ru_caret        &ru_apostr        &grave    &kp F23
+  &kp RS(N7)  &ru_lftbrt   &ru_rtbrt   &sell          &grid_no                       &parol_ru          &ru_doll         &ru_atsign        &ru_tild  &kp F24
   &ru_kg      &ru_min      &ru_max     &kp BACKSLASH  &combin                        &kp TILDE          &none            &kp RS(NUMBER_3)  &ru_pipe  &none
                                        &none          &kp LC(Q)  &kp LCTRL    &none  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
             >;
