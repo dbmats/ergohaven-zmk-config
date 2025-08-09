@@ -504,9 +504,9 @@
 
         contr_strike {
             bindings = <
-  &kp Q  &kp W  &kp E  &kp R         &kp T                        &kp C_VOLUME_UP    &kp F1      &kp F2      &kp ESC           &kp TAB
-  &kp A  &kp S  &kp D  &kp F         &kp G                        &kp C_VOLUME_DOWN  &kp H       &kp DELETE  &kp F4            &kp CAPS
-  &kp Z  &kp X  &kp C  &kp V         &kp B                        &kp BSLH           &kp O       &none       &kp LEFT_CONTROL  &kp LEFT_SHIFT
+  &kp Q  &kp W  &kp E  &kp R         &kp T                        &kp C_VOLUME_UP    &kp F1      &kp F2      &kp ESC  &kp LEFT_CONTROL
+  &kp A  &kp S  &kp D  &kp F         &kp G                        &kp C_VOLUME_DOWN  &kp H       &none       &none    &kp CAPS
+  &kp Z  &kp X  &kp C  &kp V         &kp B                        &kp BSLH           &kp O       &kp DELETE  &kp F4   &kp LEFT_SHIFT
                        &kp LEFT_ALT  &kp SPACE  &none    &kp F12  &trans             &kp INSERT
             >;
         };
