@@ -495,8 +495,8 @@
 
         en_sym {
             bindings = <
-  &formula          &kp LS(LEFT_BRACE)  &kp LS(RIGHT_BRACE)   &kp LA(EQUAL)  &en_frmt                       &out OUT_TOG       &kp CARET        &kp SQT          &kp GRAVE  &none
-  &kp LS(QUESTION)  &kp LEFT_BRACKET    &kp RIGHT_BRACKET     &sell          &grid_no                       &parol             &kp LS(DOLLAR)   &kp LS(AT_SIGN)  &kp TILDE  &none
+  &formula          &kp LS(LEFT_BRACE)  &kp LS(RIGHT_BRACE)   &kp LA(EQUAL)  &en_frmt                       &out OUT_TOG       &kp CARET        &kp SQT          &kp GRAVE  &kp F23
+  &kp LS(QUESTION)  &kp LEFT_BRACKET    &kp RIGHT_BRACKET     &sell          &grid_no                       &parol             &kp LS(DOLLAR)   &kp LS(AT_SIGN)  &kp TILDE  &kp F24
   &en_kg            &kp LS(LESS_THAN)   &kp LS(GREATER_THAN)  &kp BACKSLASH  &combin                        &kp A              &none            &en_nomer        &kp PIPE   &none
                                                               &none          &en_numbf  &kp LCTRL    &none  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
             >;
