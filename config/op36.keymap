@@ -104,6 +104,146 @@
             bindings = <&kp LALT &kp Z &kp U &kp U &kp C>;
             label = "GRID";
         };
+
+        no_grid: no_grid {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LALT &kp Z &kp U &kp U &kp F>;
+            label = "NO_GRID";
+        };
+
+        en_frmt: en_frmt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LALT) &kp LC(J) &kp LS(LALT)>;
+            label = "EN_FRMT";
+        };
+
+        ru_min: ru_min {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LALT) &kp LESS_THAN &kp LS(LALT)>;
+            label = "RU_MIN";
+        };
+
+        ru_max: ru_max {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LALT) &kp GREATER_THAN &kp LS(LALT)>;
+            label = "RU_MAX";
+        };
+
+        ru_lftbrt: ru_lftbrt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LALT) &kp LEFT_BRACKET &kp LS(LALT)>;
+            label = "RU_LFTBRT";
+        };
+
+        ru_rtbrt: ru_rtbrt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LALT) &kp RIGHT_BRACKET &kp LS(LALT)>;
+            label = "RU_RTBRT";
+        };
+
+        ru_lftbbrt: ru_lftbbrt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LALT) &kp LEFT_BRACE &kp LS(LALT)>;
+            label = "RU_LFTBBRT";
+        };
+
+        ru_rtbbrt: ru_rtbbrt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LALT) &kp RIGHT_BRACE &kp LS(LALT)>;
+            label = "RU_RTBBRT";
+        };
+
+        ru_caret: ru_caret {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LALT) &kp LCTRL &kp LS(LALT)>;
+            label = "RU_CARET";
+        };
+
+        ru_apostr: ru_apostr {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LALT) &kp SQT &kp LS(LALT)>;
+            label = "RU_APOSTR";
+        };
+
+        grave: grave {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LALT) &kp GRAVE &kp LS(LALT)>;
+            label = "GRAVE";
+        };
+
+        ru_doll: ru_doll {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LALT) &kp DOLLAR &kp LS(LALT)>;
+            label = "RU_DOLL";
+        };
+
+        ru_atsign: ru_atsign {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LALT) &kp AT_SIGN &kp LS(LALT)>;
+            label = "RU_ATSIGN";
+        };
+
+        ru_tild: ru_tild {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LALT) &kp TILDE &kp LS(LALT)>;
+            label = "RU_TILD";
+        };
+
+        ru_pipe: ru_pipe {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LALT) &kp PIPE &kp LS(LALT)>;
+            label = "RU_PIPE";
+        };
+
+        en_numbf: en_numbf {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LALT) &kp LC(Q) &kp LS(LALT)>;
+            label = "EN_NUMBF";
+        };
+
+        en_kg1: en_kh1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LALT) &kp LC(W) &kp LS(LALT)>;
+            label = "EN_KH1";
+        };
+
+        en_kg2: en_kg2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LALT) &kp LC(LS(W)) &kp LS(LALT)>;
+            label = "EN_KG2";
+        };
+
+        en_nomer: en_nomer {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LALT) &kp LS(NUMBER_3) &kp LS(LALT)>;
+            label = "EN_NOMER";
+        };
+
+        parol: parol {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N1 &kp NUMBER_2 &kp NUMBER_3 &kp EXCL &kp AT_SIGN &kp HASH &kp LS(A) &kp LS(S) &kp LS(D) &kp A &kp S &kp D>;
+            label = "PAROL";
+        };
     };
 
     keymap {
