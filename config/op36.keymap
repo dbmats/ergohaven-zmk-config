@@ -1,6 +1,7 @@
 #include "keys_ru.h"
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     combos { compatible = "zmk,combos"; };
@@ -85,10 +86,10 @@
         mous {
             display-name = "mous";
             bindings = <
-  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none
-  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none
-  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none
-                       &none  &none  &none    &none  &none  &none
+  &none  &none  &none            &none      &none                  &none  &none           &mmv MOVE_UP    &none            &none
+  &none  &none  &kp PAUSE_BREAK  &mkp LCLK  &none                  &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none
+  &none  &none  &kp F10          &mkp RCLK  &none                  &none  &none           &none           &none            &none
+                                 &none      &none  &none    &none  &none  &none
             >;
         };
 
