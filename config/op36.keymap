@@ -4,7 +4,37 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        ruen {
+            bindings = <&none>;
+            key-positions = <31 34>;
+            layers = <0>;
+        };
+
+        enru {
+            bindings = <&none>;
+            key-positions = <34 31>;
+            layers = <4>;
+        };
+    };
+
+    macros {
+        ru_en: ru_en {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LALT) &to 4>;
+            label = "RU_EN";
+        };
+
+        en_ru: en_ru {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LALT) &to 0>;
+            label = "EN_RU";
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
