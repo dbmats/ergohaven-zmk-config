@@ -8,13 +8,13 @@
         compatible = "zmk,combos";
 
         ruen {
-            bindings = <&none>;
+            bindings = <&ru_en>;
             key-positions = <31 34>;
             layers = <0>;
         };
 
         enru {
-            bindings = <&none>;
+            bindings = <&en_ru>;
             key-positions = <34 31>;
             layers = <4>;
         };
@@ -33,6 +33,76 @@
             #binding-cells = <0>;
             bindings = <&kp LS(LALT) &to 0>;
             label = "EN_RU";
+        };
+
+        ru7: ru7 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LALT) &kp LS(N7) &kp LS(LALT)>;
+            label = "RU7";
+        };
+
+        ru3: ru3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LALT) &kp LS(N3) &kp LS(LALT)>;
+            label = "RU3";
+        };
+
+        en6: en6 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LALT) &kp LS(NUMBER_6) &kp LS(LALT)>;
+            label = "EN6";
+        };
+
+        format: format {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LALT &kp Z &kp V &kp A &kp A &kp A &kp ENTER>;
+            label = "FORMAT";
+        };
+
+        value: value {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LALT &kp Z &kp V &kp P &kp P &kp ENTER>;
+            label = "VALUE";
+        };
+
+        formula: formula {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LALT &kp Z &kp V &kp A &kp A &kp ENTER>;
+            label = "FORMULA";
+        };
+
+        dbl_clik: dbl_clik {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mkp LCLK &mkp LCLK>;
+            label = "DBL_CLIK";
+        };
+
+        comb: comb {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LALT &kp Z &kp O &kp COMMA>;
+            label = "COMB";
+        };
+
+        dis_cmb: dis_cmb {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LALT &kp Z &kp O &kp J>;
+            label = "DIS_CMB";
+        };
+
+        grid: grid {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LALT &kp Z &kp U &kp U &kp C>;
+            label = "GRID";
         };
     };
 
