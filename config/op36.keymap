@@ -64,7 +64,7 @@
         f1 {
             bindings = <&kp F1>;
             key-positions = <18 19>;
-            layers = <2>;
+            layers = <2 5>;
         };
     };
 
