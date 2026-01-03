@@ -72,6 +72,30 @@
             key-positions = <3 4>;
             layers = <0 4>;
         };
+
+        win {
+            bindings = <&kt LEFT_WIN>;
+            key-positions = <25 26>;
+            layers = <0 4>;
+        };
+
+        to_cs {
+            bindings = <&tog 8>;
+            key-positions = <5 6>;
+            layers = <0 4 8>;
+        };
+
+        esc_right {
+            bindings = <&kp RCTRL>;
+            key-positions = <16 18>;
+            layers = <0 4>;
+        };
+
+        capsl {
+            bindings = <&kp CLCK>;
+            key-positions = <30 35>;
+            layers = <0 4>;
+        };
     };
 
     macros {
@@ -382,9 +406,9 @@
 
         ru_abc {
             bindings = <
-  &kp Q  &kp W  &kp E  &kp R      &kp T                      &kp Y  &kp U      &kp I  &kp O  &kp P
-  &kp A  &kp S  &kp D  &kp F      &kp G                      &kp H  &kp J      &kp K  &kp L  &kp SEMI
-  &kp Z  &kp X  &kp C  &kp V      &kp B                      &kp N  &kp M      &none  &none  &mt RS(RU_COMMA) RU_DOT
+  &kp Q  &kp W  &kp E  &kp R      &kp T                      &kp Y  &kp U      &kp I      &kp O    &kp P
+  &kp A  &kp S  &kp D  &kp F      &kp G                      &kp H  &kp J      &kp K      &kp L    &kp SEMI
+  &kp Z  &kp X  &kp C  &kp V      &kp B                      &kp N  &kp M      &kp COMMA  &kp DOT  &mt RS(RU_COMMA) RU_DOT
                        &kp LSHFT  &mo 1  &kp SPACE    &mo 3  &mo 2  &kp RSHFT
             >;
 
