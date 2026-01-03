@@ -1,5 +1,6 @@
 #include "keys_ru.h"
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
@@ -68,7 +69,7 @@
         };
 
         val_fmt {
-            bindings = <&none>;
+            bindings = <&val_frm>;
             key-positions = <3 4>;
             layers = <0 4>;
         };
@@ -417,10 +418,10 @@
 
         move {
             bindings = <
-  &kp LSHFT  &kp DELETE  &kp ENTER  &kp TAB    &kp EQUAL                      &kp HOME        &kp PG_UP  &kp UP_ARROW    &kp N9     &kp LEFT_BRACKET
-  &kp LCTRL  &kp LALT    &kp EQUAL  &kp EQUAL  &kp EQUAL                      &kp END         &kp LEFT   &kp DOWN_ARROW  &kp RIGHT  &kp RIGHT_BRACKET
-  &kp LGUI   &kp EQUAL   &kp F10    &kp EQUAL  &none                          &none           &none      &none           &none      &kp SQT
-                                    &trans     &trans     &trans    &kp LALT  &kp LC(LSHIFT)  &kp INS
+  &kp LSHFT  &kp DELETE  &kp ENTER        &kp TAB    &kp LA(LC(N1))                      &kp HOME        &kp PG_UP  &kp UP_ARROW    &kp N9     &kp LEFT_BRACKET
+  &kp LCTRL  &kp LALT    &kp PAUSE_BREAK  &mkp LCLK  &dbl_clik                           &kp END         &kp LEFT   &kp DOWN_ARROW  &kp RIGHT  &kp RIGHT_BRACKET
+  &kp LGUI   &mo 7       &kp F10          &mkp RCLK  &none                               &none           &none      &none           &none      &kp SQT
+                                          &trans     &trans          &trans    &kp LALT  &kp LC(LSHIFT)  &kp INS
             >;
 
             display-name = "move";
@@ -428,10 +429,10 @@
 
         ru_num {
             bindings = <
-  &kp N0     &kp EQUAL  &kp EQUAL  &kp EQUAL  &kp EQUAL                      &kp F6     &kp F7     &kp F8     &kp F9     &kp F11
-  &kp EQUAL  &kp EQUAL  &kp EQUAL  &kp EQUAL  &kp EQUAL                      &kp F5     &kp F4     &kp F3     &kp F2     &kp F12
-  &kp EQUAL  &kp EQUAL  &kp EQUAL  &kp EQUAL  &kp EQUAL                      &kp EQUAL  &kp EQUAL  &kp EQUAL  &kp EQUAL  &kp EQUAL
-                                   &kp LSHFT  &kp LCTRL  &kp LALT    &trans  &trans     &kp RCTRL
+  &kp N0          &mt LS(N9) N9              &mt LS(N0) N8     &ru_7 0 N7                 &mt LS(N6) N6                                  &kp F6       &kp F7              &kp F8              &kp F9      &kp F11
+  &mt LS(N1) N1   &mt LS(NUMBER_2) NUMBER_2  &ru_3 0 NUMBER_3  &mt LS(NUMBER_4) NUMBER_4  &mt LS(NUMBER_5) NUMBER_5                      &kp F5       &kp F4              &kp F3              &kp F2      &kp F12
+  &mt PLUS EQUAL  &mt UNDER MINUS            &kp ASTRK         &kp RU_SLASH               &kp RU_COMMA                                   &kp LA(F12)  &kp LA(LS(INSERT))  &kp LS(LC(INSERT))  &kp LS(F6)  &kp LS(F5)
+                                                               &kp LSHFT                  &kp LCTRL                  &kp LALT    &trans  &trans       &kp RCTRL
             >;
 
             display-name = "ru_num";
@@ -439,10 +440,10 @@
 
         ru_sym {
             bindings = <
-  &kp EQUAL        &kp EQUAL  &kp EQUAL  &kp LA(EQUAL)  &kp LC(J)                      &kp EQUAL          &kp EQUAL     &kp EQUAL   &kp EQUAL  &kp EQUAL
-  &kp RU_QUESTION  &kp EQUAL  &kp EQUAL  &kp EQUAL      &kp EQUAL                      &none              &kp EQUAL     &kp EQUAL   &kp EQUAL  &kp EQUAL
-  &kp EQUAL        &kp EQUAL  &kp EQUAL  &kp RU_BSLH    &kp EQUAL                      &kp TILDE          &none         &kp LS(N3)  &kp EQUAL  &kp EQUAL
-                                         &none          &kp LC(Q)  &kp LCTRL    &none  &kp C_VOLUME_DOWN  &kp C_VOL_UP
+  &formula         &ru_lftbbrt  &ru_rtbbrt  &kp LA(EQUAL)  &kp LC(J)                      &bt BT_NXT         &ru_caret     &ru_apostr  &grave    &kt F23
+  &kp RU_QUESTION  &ru_lftbrt   &ru_rtbrt   &sell          &grid_no                       &parol             &ru_doll      &ru_atsign  &ru_tild  &kp F24
+  &ru_kg           &ru_min      &ru_max     &kp RU_BSLH    &combin                        &kp TILDE          &none         &kp LS(N3)  &ru_pipe  &none
+                                            &none          &kp LC(Q)  &kp LCTRL    &none  &kp C_VOLUME_DOWN  &kp C_VOL_UP
             >;
 
             display-name = "ru_sym";
@@ -461,20 +462,20 @@
         en_num {
             display-name = "en_num";
             bindings = <
-  &kp N0     &kp EQUAL  &kp EQUAL  &kp EQUAL  &kp EQUAL                      &kp F6     &kp F7     &kp F8     &kp F9     &kp F11
-  &kp EQUAL  &kp EQUAL  &kp EQUAL  &kp EQUAL  &kp EQUAL                      &kp F5     &kp F4     &kp F3     &kp F2     &kp F12
-  &kp EQUAL  &kp EQUAL  &kp STAR   &kp FSLH   &kp COMMA                      &kp EQUAL  &kp EQUAL  &kp EQUAL  &kp EQUAL  &kp EQUAL
-                                   &kp LSHFT  &kp LCTRL  &kp LALT    &trans  &trans     &kp RCTRL
+  &kp N0               &mt LS(N9) N9              &mt LS(N0) N8              &mt LS(N7) NUMBER_7  &en_6 0 NUMBER_6                               &kp F6       &kp F7              &kp F8              &kp F9      &kp F11
+  &mt LS(NUMBER_1) N1  &mt LS(NUMBER_2) NUMBER_2  &mt LS(NUMBER_3) NUMBER_3  &mt SEMI NUMBER_4    &mt LS(NUMBER_5) NUMBER_5                      &kp F5       &kp F4              &kp F3              &kp F2      &kp F12
+  &mt PLUS EQUAL       &mt UNDER MINUS            &kp STAR                   &kp FSLH             &kp COMMA                                      &kp LA(F12)  &kp LA(LS(INSERT))  &kp LS(LC(INSERT))  &kp LS(F6)  &kp LS(F5)
+                                                                             &kp LSHFT            &kp LCTRL                  &kp LALT    &trans  &trans       &kp RCTRL
             >;
         };
 
         en_sym {
             display-name = "en_sym";
             bindings = <
-  &kp EQUAL  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp LA(EQUAL)  &kp LC(J)                      &kp EQUAL          &kp CARET     &kp SQT      &kp GRAVE  &kp EQUAL
-  &kp QMARK  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EQUAL      &kp EQUAL                      &none              &kp DOLLAR    &kp AT_SIGN  &kp TILDE  &kp EQUAL
-  &kp EQUAL  &kp LESS_THAN     &kp GREATER_THAN   &kp RU_BSLH    &kp EQUAL                      &kp A              &none         &kp EQUAL    &kp PIPE   &kp EQUAL
-                                                  &none          &kp EQUAL  &kp LCTRL    &none  &kp C_VOLUME_DOWN  &kp C_VOL_UP
+  &formula   &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp LA(EQUAL)  &kp LC(J)                      &bt BT_NXT         &kp CARET     &kp SQT      &kp GRAVE  &kp F23
+  &kp QMARK  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &sell          &grid_no                       &parol             &kp DOLLAR    &kp AT_SIGN  &kp TILDE  &kp F24
+  &en_kg     &kp LESS_THAN     &kp GREATER_THAN   &kp RU_BSLH    &combin                        &kp A              &none         &en_nomer    &kp PIPE   &none
+                                                  &none          &en_numbf  &kp LCTRL    &none  &kp C_VOLUME_DOWN  &kp C_VOL_UP
             >;
         };
 
