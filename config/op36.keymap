@@ -66,6 +66,12 @@
             key-positions = <18 19>;
             layers = <2 5>;
         };
+
+        val_fmt {
+            bindings = <&none>;
+            key-positions = <3 4>;
+            layers = <0 4>;
+        };
     };
 
     macros {
@@ -291,6 +297,83 @@
             #binding-cells = <0>;
             bindings = <&kp N1 &kp NUMBER_2 &kp NUMBER_3 &kp EXCL &kp AT_SIGN &kp HASH &kp LS(A) &kp LS(S) &kp LS(D) &kp A &kp S &kp D>;
             label = "PAROL";
+        };
+    };
+
+    behaviors {
+        ru_7: ru_7 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RU_7";
+            bindings = <&ru7>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+
+        ru_3: ru_3 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RU_3";
+            bindings = <&ru3>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+
+        en_6: en_6 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "EN_6";
+            bindings = <&en6>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+
+        val_frm: val_frm {
+            compatible = "zmk,behavior-tap-dance";
+            label = "VAL_FRM";
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+            bindings = <&value>, <&format>;
+        };
+
+        combin: combin {
+            compatible = "zmk,behavior-tap-dance";
+            label = "COMBIN";
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+            bindings = <&comb>, <&dis_cmb>;
+        };
+
+        grid_no: grid_no {
+            compatible = "zmk,behavior-tap-dance";
+            label = "GRID_NO";
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+            bindings = <&grid>, <&no_grid>;
+        };
+
+        sell: sell {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SELL";
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+            bindings = <&kp LC(PLUS)>, <&kp LC(MINUS)>;
+        };
+
+        ru_kg: ru_kg {
+            compatible = "zmk,behavior-tap-dance";
+            label = "RU_KG";
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+            bindings = <&kp LC(W)>, <&kp LC(LS(W))>;
+        };
+
+        en_kg: en_kg {
+            compatible = "zmk,behavior-tap-dance";
+            label = "EN_KG";
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+            bindings = <&en_kg1>, <&en_kg2>;
         };
     };
 
