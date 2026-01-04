@@ -488,10 +488,10 @@
         mous {
             display-name = "mous";
             bindings = <
-  &formula   &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp LA(EQUAL)  &en_frmt                       &out OUT_BLE       &kp CARET     &kp SQT      &kp GRAVE  &kp F23
-  &kp QMARK  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &sell          &grid_no                       &parol             &kp DOLLAR    &kp AT_SIGN  &kp TILDE  &kp F24
-  &en_kg     &kp LESS_THAN     &kp GREATER_THAN   &kp NUBS       &combin                        &kp A              &none         &en_nomer    &kp PIPE   &none
-                                                  &none          &en_numbf  &kp LCTRL    &none  &kp C_VOLUME_DOWN  &kp C_VOL_UP
+  &none  &none  &none            &none      &none                  &none   &none           &mmv MOVE_UP    &none            &none
+  &none  &none  &kp PAUSE_BREAK  &mkp LCLK  &none                  &parol  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none
+  &none  &none  &kp F10          &mkp RCLK  &none                  &none   &none           &none           &none            &none
+                                 &none      &none  &none    &none  &none   &none
             >;
         };
 
