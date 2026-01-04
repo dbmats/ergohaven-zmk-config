@@ -467,10 +467,10 @@
         en_sym {
             display-name = "en_sym";
             bindings = <
-  &kp N0                     &mt LS(N9) N9              &mt LS(NUMBER_0) N8        &mt LS(NUMBER_7) NUMBER_7  &en_6 0 NUMBER_6                                  &kp F6       &kp F7              &kp F8              &kp F9      &kp F11
-  &mt LS(NUMBER_1) NUMBER_1  &mt LS(NUMBER_2) NUMBER_2  &mt LS(NUMBER_3) NUMBER_3  &mt LS(NUMBER_4) NUMBER_4  &mt LS(NUMBER_5) NUMBER_5                         &kp F5       &kp F4              &kp F3              &kp F2      &kp F12
-  &mt PLUS EQUAL             &mt LS(MINUS) MINUS        &kp ASTRK                  &kp FSLH                   &kp COMMA                                         &kp LA(F12)  &kp LA(LS(INSERT))  &kp LS(LC(INSERT))  &kp LS(F6)  &kp LS(F5)
-                                                                                   &kp LSHFT                  &kp LCTRL                  &kp LEFT_ALT    &none  &none        &kp RCTRL
+  &formula   &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp LA(EQUAL)         &en_frmt                       &out OUT_BLE       &kp CARET        &kp SINGLE_QUOTE  &kp GRAVE  &kp F23
+  &kp QMARK  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &sell                 &grid_no                       &parol             &kp DOLLAR       &kp AT_SIGN       &kp TILDE  &kp F24
+  &en_kg     &kp LESS_THAN     &kp GREATER_THAN   &kp NON_US_BACKSLASH  &combin                        &kp A              &none            &en_nomer         &kp PIPE   &none
+                                                  &none                 &en_numbf  &kp LCTRL    &none  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
             >;
         };
 
