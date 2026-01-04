@@ -65,7 +65,7 @@
         f1 {
             bindings = <&kp F1>;
             key-positions = <18 19>;
-            layers = <2 5>;
+            layers = <1 4>;
         };
 
         val_fmt {
@@ -438,7 +438,7 @@
             display-name = "ru_sym";
             bindings = <
   &formula         &ru_lftbbrt  &ru_rtbbrt  &kp LA(EQUAL)  &kp LC(J)                      &out OUT_BLE       &ru_caret        &ru_apostr        &grave    &kp F23
-  &kp RU_QUESTION  &ru_lftbrt   &ru_rtbrt   &sell          &grid                          &ru_parol          &ru_doll         &ru_atsign        &ru_tild  &kp F24
+  &kp RU_QUESTION  &ru_lftbrt   &ru_rtbrt   &sell          &grid_no                       &ru_parol          &ru_doll         &ru_atsign        &ru_tild  &kp F24
   &ru_kg           &ru_min      &ru_max     &kp RU_BSLH    &combin                        &kp TILDE          &none            &kp LS(NUMBER_3)  &ru_pipe  &none
                                             &none          &kp LC(Q)  &kp LCTRL    &none  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
             >;
@@ -457,10 +457,10 @@
         en_num {
             display-name = "en_num";
             bindings = <
-  &kp N0                     &mt LS(N9) N9              &mt LS(NUMBER_0) N8        &mt LS(NUMBER_7) NUMBER_7  &en_6 0 NUMBER_6                                  &kp F6       &kp F7              &kp F8              &kp F9      &kp F11
-  &mt LS(NUMBER_1) NUMBER_1  &mt LS(NUMBER_2) NUMBER_2  &mt LS(NUMBER_3) NUMBER_3  &mt LS(NUMBER_4) NUMBER_4  &mt LS(NUMBER_5) NUMBER_5                         &kp F5       &kp F4              &kp F3              &kp F2      &kp F12
-  &mt PLUS EQUAL             &mt LS(MINUS) MINUS        &kp ASTRK                  &kp FSLH                   &kp COMMA                                         &kp LA(F12)  &kp LA(LS(INSERT))  &kp LS(LC(INSERT))  &kp LS(F6)  &kp LS(F5)
-                                                                                   &kp LSHFT                  &kp LCTRL                  &kp LEFT_ALT    &none  &none        &kp RCTRL
+  &kp N0                     &mt LS(N9) N9        &mt LS(NUMBER_0) N8  &mt LS(NUMBER_7) NUMBER_7  &en_6 0 NUMBER_6                                  &kp F6       &kp F7              &kp F8              &kp F9      &kp F11
+  &mt LS(NUMBER_1) NUMBER_1  &mt DQT NUMBER_2     &mt HASH NUMBER_3    &mt SEMI NUMBER_4          &mt LS(NUMBER_5) NUMBER_5                         &kp F5       &kp F4              &kp F3              &kp F2      &kp F12
+  &mt PLUS EQUAL             &mt LS(MINUS) MINUS  &kp ASTRK            &kp FSLH                   &kp COMMA                                         &kp LA(F12)  &kp LA(LS(INSERT))  &kp LS(LC(INSERT))  &kp LS(F6)  &kp LS(F5)
+                                                                       &kp LSHFT                  &kp LCTRL                  &kp LEFT_ALT    &none  &none        &kp RCTRL
             >;
         };
 
@@ -488,10 +488,10 @@
         mous {
             display-name = "mous";
             bindings = <
-  &none  &none  &none            &none      &none                  &none   &none           &mmv MOVE_UP    &none            &none
-  &none  &none  &kp PAUSE_BREAK  &mkp LCLK  &none                  &parol  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none
-  &none  &none  &kp F10          &mkp RCLK  &none                  &none   &none           &none           &none            &none
-                                 &none      &none  &none    &none  &none   &none
+  &none  &none  &none  &none      &none                  &none   &none           &mmv MOVE_UP    &none            &none
+  &none  &none  &none  &mkp LCLK  &none                  &parol  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none
+  &none  &none  &none  &mkp RCLK  &none                  &none   &none           &none           &none            &none
+                       &none      &none  &none    &none  &none   &none
             >;
         };
 
