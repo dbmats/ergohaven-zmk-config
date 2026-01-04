@@ -65,7 +65,7 @@
         f1 {
             bindings = <&kp F1>;
             key-positions = <18 19>;
-            layers = <1 4>;
+            layers = <2 5>;
         };
 
         val_fmt {
@@ -83,7 +83,7 @@
         to_cs {
             bindings = <&tog 8>;
             key-positions = <5 6>;
-            layers = <0 3 9>;
+            layers = <0 3>;
         };
 
         esc_right {
@@ -417,10 +417,20 @@
   &kp Q  &kp W  &kp E  &kp R      &kp T                      &kp Y  &kp U      &kp I      &kp O    &kp P
   &kp A  &kp S  &kp D  &kp F      &kp G                      &kp H  &kp J      &kp K      &kp L    &kp SEMI
   &kp Z  &kp X  &kp C  &kp V      &kp B                      &kp N  &kp M      &kp COMMA  &kp DOT  &mt RS(RU_COMMA) RU_DOT
-                       &kp LSHFT  &mo 7  &kp SPACE    &mo 2  &mo 1  &kp RSHFT
+                       &kp LSHFT  &mo 6  &kp SPACE    &mo 2  &mo 1  &kp RSHFT
             >;
 
             display-name = "ru_abc";
+        };
+
+        ru_num {
+            display-name = "ru_num";
+            bindings = <
+  &kp N0                     &mt LS(N9) N9              &mt LS(NUMBER_0) N8  &ru_7 0 N7                 &mt LS(NUMBER_6) NUMBER_6                         &kp F6       &kp F7              &kp F8              &kp F9      &kp F11
+  &mt LS(NUMBER_1) NUMBER_1  &mt LS(NUMBER_2) NUMBER_2  &ru_3 0 NUMBER_3     &mt LS(NUMBER_4) NUMBER_4  &mt LS(NUMBER_5) NUMBER_5                         &kp F5       &kp F4              &kp F3              &kp F2      &kp F12
+  &mt PLUS EQUAL             &mt LS(MINUS) MINUS        &kp RU_ASTERISK      &kp RU_SLASH               &kp RU_COMMA                                      &kp LA(F12)  &kp LA(LS(INSERT))  &kp LS(LC(INSERT))  &kp LS(F6)  &kp LS(F5)
+                                                                             &kp LSHFT                  &kp LCTRL                  &kp LEFT_ALT    &none  &none        &kp RCTRL
+            >;
         };
 
         ru_sym {
@@ -440,17 +450,17 @@
   &kp Q  &kp W  &kp E  &kp R      &kp T                      &kp Y  &kp U      &kp I  &kp O  &kp P
   &kp A  &kp S  &kp D  &kp F      &kp G                      &kp H  &kp J      &kp K  &kp L  &kp SEMI
   &kp Z  &kp X  &kp C  &kp V      &kp B                      &kp N  &kp M      &none  &none  &mt COMMA DOT
-                       &kp LSHFT  &mo 7  &kp SPACE    &mo 5  &mo 4  &kp RSHFT
+                       &kp LSHFT  &mo 6  &kp SPACE    &mo 5  &mo 4  &kp RSHFT
             >;
         };
 
-        en_abc {
-            display-name = "en_abc";
+        en_num {
+            display-name = "en_num";
             bindings = <
-  &kp Q  &kp W  &kp E  &kp R      &kp T                      &kp Y  &kp U      &kp I  &kp O  &kp P
-  &kp A  &kp S  &kp D  &kp F      &kp G                      &kp H  &kp J      &kp K  &kp L  &kp SEMI
-  &kp Z  &kp X  &kp C  &kp V      &kp B                      &kp N  &kp M      &none  &none  &mt COMMA DOT
-                       &kp LSHFT  &mo 7  &kp SPACE    &mo 5  &mo 4  &kp RSHFT
+  &kp N0                     &mt LS(N9) N9              &mt LS(NUMBER_0) N8        &mt LS(NUMBER_7) NUMBER_7  &en_6 0 NUMBER_6                                  &kp F6       &kp F7              &kp F8              &kp F9      &kp F11
+  &mt LS(NUMBER_1) NUMBER_1  &mt LS(NUMBER_2) NUMBER_2  &mt LS(NUMBER_3) NUMBER_3  &mt LS(NUMBER_4) NUMBER_4  &mt LS(NUMBER_5) NUMBER_5                         &kp F5       &kp F4              &kp F3              &kp F2      &kp F12
+  &mt PLUS EQUAL             &mt LS(MINUS) MINUS        &kp ASTRK                  &kp FSLH                   &kp COMMA                                         &kp LA(F12)  &kp LA(LS(INSERT))  &kp LS(LC(INSERT))  &kp LS(F6)  &kp LS(F5)
+                                                                                   &kp LSHFT                  &kp LCTRL                  &kp LEFT_ALT    &none  &none        &kp RCTRL
             >;
         };
 
@@ -464,6 +474,17 @@
             >;
         };
 
+        move {
+            bindings = <
+  &kp LSHFT  &kp DELETE  &kp ENTER        &kp TAB    &kp LA(LC(N1))                     &kp HOME        &kp PG_UP  &kp UP_ARROW    &kp PAGE_DOWN  &kp LEFT_BRACKET
+  &kp LCTRL  &kp LALT    &kp PAUSE_BREAK  &mkp LCLK  &dbl_clik                          &kp END         &kp LEFT   &kp DOWN_ARROW  &kp RIGHT      &kp RIGHT_BRACKET
+  &kp LGUI   &mo 7       &kp F10          &mkp RCLK  &none                              &none           &none      &none           &none          &kp SQT
+                                          &none      &none           &none    &kp LALT  &kp LC(LSHIFT)  &kp INS
+            >;
+
+            display-name = "move";
+        };
+
         mous {
             display-name = "mous";
             bindings = <
@@ -472,28 +493,6 @@
   &none  &none  &kp F10          &mkp RCLK  &none                  &none  &none           &none           &none            &none
                                  &none      &none  &none    &none  &none  &none
             >;
-        };
-
-        move {
-            bindings = <
-  &kp LSHFT  &kp DELETE  &kp ENTER        &kp TAB    &kp LA(LC(N1))                     &kp HOME        &kp PG_UP  &kp UP_ARROW    &kp PAGE_DOWN  &kp LEFT_BRACKET
-  &kp LCTRL  &kp LALT    &kp PAUSE_BREAK  &mkp LCLK  &dbl_clik                          &kp END         &kp LEFT   &kp DOWN_ARROW  &kp RIGHT      &kp RIGHT_BRACKET
-  &kp LGUI   &mo 6       &kp F10          &mkp RCLK  &none                              &none           &none      &none           &none          &kp SQT
-                                          &none      &none           &none    &kp LALT  &kp LC(LSHIFT)  &kp INS
-            >;
-
-            display-name = "move";
-        };
-
-        move {
-            bindings = <
-  &kp LSHFT  &kp DELETE  &kp ENTER        &kp TAB    &kp LA(LC(N1))                     &kp HOME        &kp PG_UP  &kp UP_ARROW    &kp PAGE_DOWN  &kp LEFT_BRACKET
-  &kp LCTRL  &kp LALT    &kp PAUSE_BREAK  &mkp LCLK  &dbl_clik                          &kp END         &kp LEFT   &kp DOWN_ARROW  &kp RIGHT      &kp RIGHT_BRACKET
-  &kp LGUI   &mo 6       &kp F10          &mkp RCLK  &none                              &none           &none      &none           &none          &kp SQT
-                                          &none      &none           &none    &kp LALT  &kp LC(LSHIFT)  &kp INS
-            >;
-
-            display-name = "move";
         };
 
         cs2 {
