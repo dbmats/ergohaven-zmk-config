@@ -434,8 +434,8 @@
             display-name = "ru_num";
         };
 
-        ru_num {
-            display-name = "ru_num";
+        ru_sym {
+            display-name = "ru_sym";
             bindings = <
   &kp N0                     &mt LS(N9) N9              &mt LS(NUMBER_0) N8  &ru_7 0 N7                 &mt LS(NUMBER_6) NUMBER_6                         &kp F6       &kp F7              &kp F8              &kp F9      &kp F11
   &mt LS(NUMBER_1) NUMBER_1  &mt LS(NUMBER_2) NUMBER_2  &ru_3 0 NUMBER_3     &mt LS(NUMBER_4) NUMBER_4  &mt LS(NUMBER_5) NUMBER_5                         &kp F5       &kp F4              &kp F3              &kp F2      &kp F12
@@ -464,8 +464,8 @@
             >;
         };
 
-        en_num {
-            display-name = "en_num";
+        en_sym {
+            display-name = "en_sym";
             bindings = <
   &kp N0                     &mt LS(N9) N9              &mt LS(NUMBER_0) N8        &mt LS(NUMBER_7) NUMBER_7  &en_6 0 NUMBER_6                                  &kp F6       &kp F7              &kp F8              &kp F9      &kp F11
   &mt LS(NUMBER_1) NUMBER_1  &mt LS(NUMBER_2) NUMBER_2  &mt LS(NUMBER_3) NUMBER_3  &mt LS(NUMBER_4) NUMBER_4  &mt LS(NUMBER_5) NUMBER_5                         &kp F5       &kp F4              &kp F3              &kp F2      &kp F12
@@ -485,8 +485,8 @@
             display-name = "move";
         };
 
-        en_sym {
-            display-name = "en_sym";
+        mous {
+            display-name = "mous";
             bindings = <
   &formula   &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp LA(EQUAL)  &en_frmt                       &out OUT_BLE       &kp CARET     &kp SQT      &kp GRAVE  &kp F23
   &kp QMARK  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &sell          &grid_no                       &parol             &kp DOLLAR    &kp AT_SIGN  &kp TILDE  &kp F24
