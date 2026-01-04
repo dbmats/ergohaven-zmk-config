@@ -437,10 +437,10 @@
         ru_sym {
             display-name = "ru_sym";
             bindings = <
-  &kp N0                     &mt LS(N9) N9              &mt LS(NUMBER_0) N8  &ru_7 0 N7                 &mt LS(NUMBER_6) NUMBER_6                         &kp F6       &kp F7              &kp F8              &kp F9      &kp F11
-  &mt LS(NUMBER_1) NUMBER_1  &mt LS(NUMBER_2) NUMBER_2  &ru_3 0 NUMBER_3     &mt LS(NUMBER_4) NUMBER_4  &mt LS(NUMBER_5) NUMBER_5                         &kp F5       &kp F4              &kp F3              &kp F2      &kp F12
-  &mt PLUS EQUAL             &mt LS(MINUS) MINUS        &kp RU_ASTERISK      &kp RU_SLASH               &kp RU_COMMA                                      &kp LA(F12)  &kp LA(LS(INSERT))  &kp LS(LC(INSERT))  &kp LS(F6)  &kp LS(F5)
-                                                                             &kp LSHFT                  &kp LCTRL                  &kp LEFT_ALT    &none  &none        &kp RCTRL
+  &formula         &ru_lftbbrt  &ru_rtbbrt  &kp LA(EQUAL)  &kp LC(J)                      &out OUT_BLE       &ru_caret        &ru_apostr        &grave    &kp F23
+  &kp RU_QUESTION  &ru_lftbrt   &ru_rtbrt   &sell          &grid                          &ru_parol          &ru_doll         &ru_atsign        &ru_tild  &kp F24
+  &ru_kg           &ru_min      &ru_max     &kp RU_BSLH    &combin                        &kp TILDE          &none            &kp LS(NUMBER_3)  &ru_pipe  &none
+                                            &none          &kp LC(Q)  &kp LCTRL    &none  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
             >;
         };
 
