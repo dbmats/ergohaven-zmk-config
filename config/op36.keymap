@@ -75,7 +75,7 @@
         };
 
         win {
-            bindings = <&kt LEFT_WIN>;
+            bindings = <&kp LEFT_WIN>;
             key-positions = <25 26>;
             layers = <0 3>;
         };
