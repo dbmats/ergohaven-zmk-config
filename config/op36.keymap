@@ -445,7 +445,7 @@
         };
 
         en_abc {
-            display-name = "#0095FF en_abc";
+            display-name = "#5555ff en_abc";
             bindings = <
   &kp Q  &kp W  &kp E  &kp R      &kp T                      &kp Y  &kp U      &kp I  &kp O  &kp P
   &kp A  &kp S  &kp D  &kp F      &kp G                      &kp H  &kp J      &kp K  &kp L  &kp SEMI
@@ -455,7 +455,7 @@
         };
 
         en_num {
-            display-name = "#0095FF en_num";
+            display-name = "#5555ff en_num";
             bindings = <
   &kp N0                     &mt LS(N9) N9        &mt LS(NUMBER_0) N8  &mt LS(NUMBER_7) NUMBER_7  &en_6 0 NUMBER_6                                  &kp F6       &kp F7              &kp F8              &kp F9      &kp F11
   &mt LS(NUMBER_1) NUMBER_1  &mt DQT NUMBER_2     &mt HASH NUMBER_3    &mt SEMI NUMBER_4          &mt LS(NUMBER_5) NUMBER_5                         &kp F5       &kp F4              &kp F3              &kp F2      &kp F12
@@ -465,7 +465,7 @@
         };
 
         en_sym {
-            display-name = "#0095FF en_sym";
+            display-name = "#5555ff en_sym";
             bindings = <
   &formula   &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp LA(EQUAL)         &en_frmt                       &out OUT_BLE       &kp CARET        &kp SINGLE_QUOTE  &kp GRAVE  &kp F23
   &kp QMARK  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &sell                 &grid_no                       &parol             &kp DOLLAR       &kp AT_SIGN       &kp TILDE  &kp F24
