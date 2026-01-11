@@ -420,7 +420,7 @@
                        &kp LSHFT  &mo 6  &kp SPACE    &mo 2  &mo 1  &kp RSHFT
             >;
 
-            display-name = "#00FF00 ru_abc";
+            display-name = "#39ff14 ru_abc";
         };
 
         ru_num {
@@ -431,11 +431,11 @@
                                                                              &kp LSHFT                  &kp LCTRL                  &kp LEFT_ALT    &none  &none        &kp RCTRL
             >;
 
-            display-name = "#00FF00 ru_num";
+            display-name = "#39ff14 ru_num";
         };
 
         ru_sym {
-            display-name = "#00FF00 ru_sym";
+            display-name = "#39ff14 ru_sym";
             bindings = <
   &formula         &ru_lftbbrt  &ru_rtbbrt  &kp LA(EQUAL)  &kp LC(J)                      &out OUT_BLE       &ru_caret        &ru_apostr        &grave    &kp F23
   &kp RU_QUESTION  &ru_lftbrt   &ru_rtbrt   &sell          &grid_no                       &ru_parol          &ru_doll         &ru_atsign        &ru_tild  &kp F24
@@ -445,7 +445,7 @@
         };
 
         en_abc {
-            display-name = "#5555ff en_abc";
+            display-name = "#04d9ff en_abc";
             bindings = <
   &kp Q  &kp W  &kp E  &kp R      &kp T                      &kp Y  &kp U      &kp I  &kp O  &kp P
   &kp A  &kp S  &kp D  &kp F      &kp G                      &kp H  &kp J      &kp K  &kp L  &kp SEMI
@@ -455,7 +455,7 @@
         };
 
         en_num {
-            display-name = "#5555ff en_num";
+            display-name = "#04d9ff en_num";
             bindings = <
   &kp N0                     &mt LS(N9) N9        &mt LS(NUMBER_0) N8  &mt LS(NUMBER_7) NUMBER_7  &en_6 0 NUMBER_6                                  &kp F6       &kp F7              &kp F8              &kp F9      &kp F11
   &mt LS(NUMBER_1) NUMBER_1  &mt DQT NUMBER_2     &mt HASH NUMBER_3    &mt SEMI NUMBER_4          &mt LS(NUMBER_5) NUMBER_5                         &kp F5       &kp F4              &kp F3              &kp F2      &kp F12
@@ -465,7 +465,7 @@
         };
 
         en_sym {
-            display-name = "#5555ff en_sym";
+            display-name = "#04d9ff en_sym";
             bindings = <
   &formula   &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp LA(EQUAL)         &en_frmt                       &out OUT_BLE       &kp CARET        &kp SINGLE_QUOTE  &kp GRAVE  &kp F23
   &kp QMARK  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &sell                 &grid_no                       &parol             &kp DOLLAR       &kp AT_SIGN       &kp TILDE  &kp F24
@@ -496,7 +496,7 @@
         };
 
         cs2 {
-            display-name = "#FFB52E cs2";
+            display-name = "#fefe22 cs2";
             bindings = <
   &kp Q  &kp W  &kp E  &kp R         &kp T                        &kp C_VOL_UP  &kp F1   &kp F2      &kp ESC  &kp LEFT_CONTROL
   &kp A  &kp S  &kp D  &kp F         &kp G                        &kp C_VOL_DN  &none    &none       &none    &kp CLCK
