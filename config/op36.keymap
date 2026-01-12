@@ -437,7 +437,7 @@
         ru_sym {
             display-name = "#39ff14 ru_sym";
             bindings = <
-  &formula         &ru_lftbbrt  &ru_rtbbrt  &kp LA(EQUAL)  &kp LC(J)                      &out OUT_BLE       &ru_caret        &ru_apostr        &grave    &kp F23
+  &formula         &ru_lftbbrt  &ru_rtbbrt  &kp LA(EQUAL)  &kp LC(J)                      &out OUT_TOG       &ru_caret        &ru_apostr        &grave    &kp F23
   &kp RU_QUESTION  &ru_lftbrt   &ru_rtbrt   &sell          &grid_no                       &ru_parol          &ru_doll         &ru_atsign        &ru_tild  &kp F24
   &ru_kg           &ru_min      &ru_max     &kp RU_BSLH    &combin                        &kp TILDE          &none            &kp LS(NUMBER_3)  &ru_pipe  &none
                                             &none          &kp LC(Q)  &kp LCTRL    &none  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
@@ -467,7 +467,7 @@
         en_sym {
             display-name = "#04d9ff en_sym";
             bindings = <
-  &formula   &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp LA(EQUAL)         &en_frmt                       &out OUT_BLE       &kp CARET        &kp SINGLE_QUOTE  &kp GRAVE  &kp F23
+  &formula   &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp LA(EQUAL)         &en_frmt                       &out OUT_TOG       &kp CARET        &kp SINGLE_QUOTE  &kp GRAVE  &kp F23
   &kp QMARK  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &sell                 &grid_no                       &parol             &kp DOLLAR       &kp AT_SIGN       &kp TILDE  &kp F24
   &en_kg     &kp LESS_THAN     &kp GREATER_THAN   &kp NON_US_BACKSLASH  &combin                        &kp A              &none            &en_nomer         &kp PIPE   &none
                                                   &none                 &en_numbf  &kp LCTRL    &none  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
