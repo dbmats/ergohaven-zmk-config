@@ -476,10 +476,10 @@
 
         move {
             bindings = <
-  &kp LSHFT  &kp DELETE      &kp ENTER        &kp TAB    &kp LA(LC(N1))                     &kp HOME        &kp PG_UP  &kp UP_ARROW    &kp PAGE_DOWN  &kp LEFT_BRACKET
-  &kp LCTRL  &kp SCROLLLOCK  &kp PAUSE_BREAK  &mkp LCLK  &dbl_clik                          &kp END         &kp LEFT   &kp DOWN_ARROW  &kp RIGHT      &kp RIGHT_BRACKET
-  &kp LGUI   &mo 7           &kp F10          &mkp RCLK  &none                              &none           &none      &none           &none          &kp SQT
-                                              &none      &none           &none    &kp LALT  &kp LC(LSHIFT)  &kp INS
+  &kp LSHFT  &kp DELETE    &kp ENTER        &kp TAB    &kp LA(LC(N1))                     &kp HOME        &kp PG_UP  &kp UP_ARROW    &kp PAGE_DOWN  &kp LEFT_BRACKET
+  &kp LCTRL  &kp LEFT_ALT  &kp PAUSE_BREAK  &mkp LCLK  &dbl_clik                          &kp END         &kp LEFT   &kp DOWN_ARROW  &kp RIGHT      &kp RIGHT_BRACKET
+  &kp LGUI   &mo 7         &kp F10          &mkp RCLK  &kp SCROLLLOCK                     &none           &none      &none           &none          &kp SQT
+                                            &none      &none           &none    &kp LALT  &kp LC(LSHIFT)  &kp INS
             >;
 
             display-name = "move";
