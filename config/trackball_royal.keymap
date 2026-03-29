@@ -94,8 +94,7 @@
 
 &trackball_listener {
     input-processors =
-        <&zip_y_scaler 1 2>,
-        <&zip_x_scaler 1 1>,
+        <&zip_xy_scaler 1 4>,
         <&sensor_rotation>;
 
     scroller {
@@ -108,7 +107,7 @@
 
     sniper {
         layers = <2>;
-        input-processors = <&zip_xy_scaler 1 4>;
+        input-processors = <&zip_xy_scaler 1 2>;
     };
 
     adjust {
