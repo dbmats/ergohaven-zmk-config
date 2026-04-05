@@ -51,8 +51,8 @@
 
         base {
             bindings = <
-&mkp MB1  &none
-&mo 1     &mkp MB2
+&mkp MB2  &none
+&mo 1     &mkp MB1
 &adj1     &adj2
             >;
 
