@@ -334,14 +334,22 @@
         right_scrlk: right_scrlk {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SCROLLLOCK &kp RIGHT &kp SCROLLLOCK>;
+            bindings =
+                <&kp SCROLLLOCK &sk RIGHT>,
+                <&macro_pause_for_release>,
+                <&kp SCROLLLOCK>;
+
             label = "RIGHT_SCRLK";
         };
 
         left_scrlk: left_scrlk {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SCROLLLOCK &kp LEFT &kp SCROLLLOCK>;
+            bindings =
+                <&kp SCROLLLOCK &sk LEFT>,
+                <&macro_pause_for_release>,
+                <&kp SCROLLLOCK>;
+
             label = "LEFT_SCRLK";
         };
     };
