@@ -6,6 +6,7 @@
 #include <scroll-snap.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 #include "input/processors/sensor_rotation.dtsi"
 
@@ -51,7 +52,7 @@
 
         base {
             bindings = <
-&mkp MB2  &none
+&mkp MB2  &kp A
 &mo 1     &mkp MB1
 &adj1     &adj2
             >;
